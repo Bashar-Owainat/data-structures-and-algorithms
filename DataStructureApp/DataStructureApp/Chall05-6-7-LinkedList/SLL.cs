@@ -155,5 +155,58 @@ namespace DataStucture.LinkedList
             return mainPointer.value;
         }
 
+
+
+        public int Length()
+        {
+            Node temp = head;
+            int count = 1;
+            while(head.next != null)
+            {
+                count += 1;
+                head = head.next;
+            }
+            head = temp;
+            return count;
+        }
+
+
+        public static SLL ZipList(SLL list1, SLL list2)
+        {
+            int length1 = list1.Length();
+            int length2 = list2.Length();
+             int zipListLength = length1 + length2;
+
+            SLL zipList = new SLL();
+            //zipList.Append(list1.head.value);
+            //zipList.Append(list2.head.value);
+
+            //zipList.Append(list1.head.next.value);
+            //zipList.Append(list2.head.next.value);
+
+
+            // zipList.head = list1.head;
+
+            int counter = 1;
+            int value1 = list1.head.value;
+            int value2 = list2.head.value;
+
+            while (counter <= zipListLength)
+            {
+                if (counter % 2 != 0)
+                {
+                  zipList.Append(value1);
+                    value1 = list1.head.next.value;
+                }
+                else
+                {
+                    zipList.Append(value2);
+                    value2 = list2.head.next.value;
+                }
+                counter++;
+            }
+            return zipList;
+        }
+
     }
 }
