@@ -285,6 +285,27 @@ namespace TestProject
 
 
         }
+
+        [Fact]
+        public void ZipList()
+        {
+            SLL list1 = new SLL();
+            SLL list2 = new SLL();
+
+            list1.Append(9);
+            list1.Append(6);
+            list1.Append(3);
+            list2.Append(8);
+            list2.Append(4);
+            list2.Append(2);
+
+            SLL newList = new SLL();
+            newList =  SLL.ZipList(list1, list2);
+           
+            Assert.Equal("[9] -> [8] -> [6] -> [4] -> [3] -> [2] -> NUll", SLL.ToStringMethod(newList)); 
+
+
+        }
     }
 }
 

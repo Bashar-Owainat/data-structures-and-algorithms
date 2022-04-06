@@ -178,33 +178,32 @@ namespace DataStucture.LinkedList
              int zipListLength = length1 + length2;
 
             SLL zipList = new SLL();
-            //zipList.Append(list1.head.value);
-            //zipList.Append(list2.head.value);
-
-            //zipList.Append(list1.head.next.value);
-            //zipList.Append(list2.head.next.value);
-
-
-            // zipList.head = list1.head;
+         
+            Node temp1 = list1.head;
+            Node temp2 = list2.head;
 
             int counter = 1;
-            int value1 = list1.head.value;
-            int value2 = list2.head.value;
+          
 
             while (counter <= zipListLength)
             {
                 if (counter % 2 != 0)
                 {
-                  zipList.Append(value1);
-                    value1 = list1.head.next.value;
+                  zipList.Append(list1.head.value);
+                  
+                  list1.head = list1.head.next;
+         
                 }
                 else
                 {
-                    zipList.Append(value2);
-                    value2 = list2.head.next.value;
+                    zipList.Append(list2.head.value);
+                    list2.head = list2.head.next;
+                   
                 }
                 counter++;
             }
+            list1.head = temp1;
+            list2.head = temp2;
             return zipList;
         }
 

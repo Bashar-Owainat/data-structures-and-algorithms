@@ -7,6 +7,7 @@ ZipList
 
 ### tests for challenge 8
 
+ZipList: it tests if the two linked lists has mereged in the required way.
 
 ### Approach & Efficiency for Challenge 8
 

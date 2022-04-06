@@ -7,22 +7,27 @@ namespace DataStructureApp
     {
         static void Main(string[] args)
         {
-            SLL list = new SLL();
-            SLL.Insert(list, 5);
-            list.Append(6);
-            //list.Append(5);
-          
-            Console.WriteLine(SLL.ToStringMethod(list));
-
+            SLL list1 = new SLL();
             SLL list2 = new SLL();
-            SLL.Insert(list2, 3);
-            list2.Append(7);
-            //list2.Append(1);
+
+            list1.Append(9);
+            list1.Append(6);
+            list1.Append(3);
+
+            list2.Append(8);
+            list2.Append(4);
+            list2.Append(2);
+
+            
+
+            Console.WriteLine(SLL.ToStringMethod(list1));
+
+           
             Console.WriteLine(SLL.ToStringMethod(list2));
 
-            SLL.ZipList(list, list2);
+            
             SLL newList = new SLL();
-             newList= SLL.ZipList(list, list2);
+             newList= SLL.ZipList(list1, list2);
             Console.WriteLine(SLL.ToStringMethod(newList));
 
             //Node givenNode = list.head.next.next;
