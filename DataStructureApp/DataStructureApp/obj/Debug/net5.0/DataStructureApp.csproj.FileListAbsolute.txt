@@ -1,0 +1,16 @@
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\bin\Debug\net5.0\DataStructureApp.exe
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\bin\Debug\net5.0\DataStructureApp.deps.json
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\bin\Debug\net5.0\DataStructureApp.runtimeconfig.json
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\bin\Debug\net5.0\DataStructureApp.runtimeconfig.dev.json
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\bin\Debug\net5.0\DataStructureApp.dll
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\bin\Debug\net5.0\ref\DataStructureApp.dll
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\bin\Debug\net5.0\DataStructureApp.pdb
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\obj\Debug\net5.0\DataStructureApp.csproj.AssemblyReference.cache
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\obj\Debug\net5.0\DataStructureApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\obj\Debug\net5.0\DataStructureApp.AssemblyInfoInputs.cache
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\obj\Debug\net5.0\DataStructureApp.AssemblyInfo.cs
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\obj\Debug\net5.0\DataStructureApp.csproj.CoreCompileInputs.cache
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\obj\Debug\net5.0\DataStructureApp.dll
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\obj\Debug\net5.0\ref\DataStructureApp.dll
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\obj\Debug\net5.0\DataStructureApp.pdb
+C:\Users\LEGION\source\repos\Bashar-Owainat\data-structures-and-algorithms\DataStructureApp\DataStructureApp\obj\Debug\net5.0\DataStructureApp.genruntimeconfig.cache
