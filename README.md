@@ -7,3 +7,5 @@
 |SLL-Chall05|[go to SLL](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall05-6-7-LinkedList/Challenge05/Chall05-whiteboard)
 |SLL-Chall06|[go to SLL](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall05-6-7-LinkedList/Challenge06/Chall06-whiteboard)
 |SLL-Chall07|[go to SLL](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall05-6-7-LinkedList/Challenge07/Chall07-whiteboard)
+|SLL-Chall08|[go to SLL](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall05-6-7-LinkedList/Challenge08/Chall08-whiteboard)
+
