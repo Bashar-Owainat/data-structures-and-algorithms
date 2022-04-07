@@ -16,9 +16,18 @@
 
 
 ### Approach & Efficiency for Challenge 6
-Append = O(n)
-InsertBefore = O(n)
-InsertAfter = O(n)
+Append time = O(n)
+
+Append space = O(n)
+
+InsertBefore space = O(n)
+
+InsertBefore time = O(n)
+
+InsertAfter space = O(1)
+
+InsertAfter time = O(1)
+
 
 ### API for Challenge 6
 

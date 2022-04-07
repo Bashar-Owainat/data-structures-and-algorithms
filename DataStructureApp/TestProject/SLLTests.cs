@@ -11,14 +11,14 @@ namespace TestProject
         {
             SLL list = new SLL();
 
-            Assert.Equal(null, list.head);
+            Assert.Null(list.head);
         }
 
         [Fact]
         public void Insert()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 8);
+            list.Insert(8);
 
             Assert.Equal(8, list.head.value);
         }
@@ -27,10 +27,10 @@ namespace TestProject
         public void PointAtHead()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 8);
-            SLL.Insert(list, 10);
-            SLL.Insert(list, 1);
-            SLL.Insert(list, 2);
+            list.Insert( 8);
+            list.Insert(10);
+            list.Insert( 1);
+            list.Insert( 2);
 
             Assert.Equal(2, list.head.value);
 
@@ -41,10 +41,10 @@ namespace TestProject
         {
 
             SLL list = new SLL();
-            SLL.Insert(list, 8);
-            SLL.Insert(list, 10);
-            SLL.Insert(list, 1);
-            SLL.Insert(list, 2);
+            list.Insert( 8);
+            list.Insert( 10);
+            list.Insert( 1);
+            list.Insert( 2);
             string result = SLL.ToStringMethod(list);
             Assert.Equal("[2] -> [1] -> [10] -> [8] -> NUll", result);
 
@@ -54,12 +54,12 @@ namespace TestProject
         public void FindValue()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 8);
-            SLL.Insert(list, 10);
-            SLL.Insert(list, 1);
-            SLL.Insert(list, 2);
+            list.Insert( 8);
+            list.Insert( 10);
+            list.Insert( 1);
+            list.Insert( 2);
 
-            Assert.Equal(true, SLL.Includes(list, 10));
+            Assert.True(SLL.Includes(list, 10));
 
         }
 
@@ -67,12 +67,12 @@ namespace TestProject
         public void ValueNotFound()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 8);
-            SLL.Insert(list, 10);
-            SLL.Insert(list, 1);
-            SLL.Insert(list, 2);
+            list.Insert( 8);
+            list.Insert(10);
+            list.Insert( 1);
+            list.Insert(2);
 
-            Assert.Equal(false, SLL.Includes(list, 100));
+            Assert.False(SLL.Includes(list, 100));
 
         }
 
@@ -81,10 +81,10 @@ namespace TestProject
         {
 
             SLL list = new SLL();
-            SLL.Insert(list, 8);
-            SLL.Insert(list, 7);
-            SLL.Insert(list, 6);
-            SLL.Insert(list, 5);
+            list.Insert( 8);
+            list.Insert( 7);
+            list.Insert( 6);
+            list.Insert( 5);
             string result = SLL.ToStringMethod(list);
             Assert.Equal("[5] -> [6] -> [7] -> [8] -> NUll", result);
 
@@ -100,8 +100,8 @@ namespace TestProject
         public void AppendOneNode()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 5);
-            SLL.Insert(list, 2);
+            list.Append( 5);
+            list.Append( 2);
             list.Append(6);
             string result = SLL.ToStringMethod(list);
             Assert.Equal("[2] -> [5] -> [6] -> NUll", result);
@@ -111,8 +111,8 @@ namespace TestProject
         public void AppendMultipleNodes()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 5);
-            SLL.Insert(list, 2);
+            list.Append(5);
+            list.Append(2);
             list.Append(6);
             list.Append(6);
             list.Append(6);
@@ -128,7 +128,7 @@ namespace TestProject
         public void InsertBefore()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 5);
+            list.Insert(5);
             list.Append(6);
             list.Append(5);
 
@@ -143,7 +143,7 @@ namespace TestProject
         public void InsertBeforeFirst()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 5);
+            list.Insert(5);
             list.Append(6);
             list.Append(5);
 
@@ -158,7 +158,7 @@ namespace TestProject
         public void InsertAfter()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 5);
+            list.Insert(5);
             list.Append(6);
             list.Append(5);
 
@@ -172,7 +172,7 @@ namespace TestProject
         public void InsertAfterLast()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 5);
+            list.Insert(5);
             list.Append(6);
             list.Append(5);
 
@@ -194,8 +194,8 @@ namespace TestProject
         public void KOutOfRange()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 5);
-            SLL.Insert(list, 2);
+            list.Append( 5);
+            list.Append(2);
             list.Append(6);
             try
             {
@@ -219,8 +219,8 @@ namespace TestProject
         public void SameNumbers()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 5); // it adds at head
-            SLL.Insert(list, 2); // it adds at head
+            list.Insert(5); // it adds at head
+            list.Insert(2); // it adds at head
             list.Append(6); // it adds at the end
 
 
@@ -233,8 +233,8 @@ namespace TestProject
         public void NegativeNumbers()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 5); // it adds at head
-            SLL.Insert(list, 2); // it adds at head
+            list.Insert( 5); // it adds at head
+            list.Insert(2); // it adds at head
             list.Append(6); // it adds at the end
 
             try
@@ -256,7 +256,7 @@ namespace TestProject
         public void OneNumber()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 5); // it adds at head
+            list.Insert( 5); // it adds at head
 
 
 
@@ -272,7 +272,7 @@ namespace TestProject
         public void NumberInMiddle()
         {
             SLL list = new SLL();
-            SLL.Insert(list, 5); // it adds at head
+            list.Insert( 5); // it adds at head
             list.Append(8);
             list.Append(2);
             list.Append(3);

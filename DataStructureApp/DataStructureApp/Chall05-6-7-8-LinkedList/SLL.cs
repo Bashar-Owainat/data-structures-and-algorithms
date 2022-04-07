@@ -11,11 +11,11 @@ namespace DataStucture.LinkedList
         public Node head;
 
 
-        public static void Insert(SLL list1, int value)
+        public void Insert( int value)
         {
             Node newNode = new Node(value);
-            newNode.next = list1.head;
-            list1.head = newNode;
+            newNode.next = head;
+            head = newNode;
 
         }
 
