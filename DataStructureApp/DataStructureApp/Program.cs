@@ -5,30 +5,35 @@ namespace DataStructureApp
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             SLL list1 = new SLL();
             SLL list2 = new SLL();
 
-            list1.Append(9);
-            list1.Append(6);
-            list1.Append(3);
+            list1.Insert(5);
+            list1.Insert(6);
 
-            list2.Append(8);
-            list2.Append(4);
-            list2.Append(2);
 
-            
+            //list1.Append(9);
+            //list1.Append(6);
+            //list1.Append(3);
+
+            //list2.Append(8);
+            //list2.Append(4);
+            //list2.Append(2);
+
+
 
             Console.WriteLine(SLL.ToStringMethod(list1));
 
            
-            Console.WriteLine(SLL.ToStringMethod(list2));
+          //  Console.WriteLine(SLL.ToStringMethod(list2));
 
             
-            SLL newList = new SLL();
-             newList= SLL.ZipList(list1, list2);
-            Console.WriteLine(SLL.ToStringMethod(newList));
+            //SLL newList = new SLL();
+            // newList= SLL.ZipList(list1, list2);
+            //Console.WriteLine(SLL.ToStringMethod(newList));
 
             //Node givenNode = list.head.next.next;
             //list.InsertBefore(givenNode, 9);

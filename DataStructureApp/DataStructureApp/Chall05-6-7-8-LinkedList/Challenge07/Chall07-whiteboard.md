@@ -1,5 +1,10 @@
 ﻿# challenge 7
 
+## problem domain
+
+ create a method that takes an integer as a parameter and uses this number to start counting from the end of the linked list to give you the value in that index.
+
+![](chall07-whiteboard.png)
 ### Methods for challenge 7
 
 KthFromEnd
@@ -19,7 +24,8 @@ NumberInMiddle: it tests the behavior of the method when K is in the middle of t
 
 ### Approach & Efficiency for Challenge 7
 
-KthFromEnd = O(n)
+KthFromEnd space = O(n)
+KthFromEnd time = O(n)
 
 
 ### API for Challenge 7
