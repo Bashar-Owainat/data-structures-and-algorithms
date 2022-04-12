@@ -9,4 +9,5 @@
 |chall07-linked-list-kth|[linked-list-kth](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall05-6-7-8-LinkedList/Challenge07/Chall07-whiteboard)
 |chall08-linked-list-zip|[go to linked-list-zip](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall05-6-7-8-LinkedList/Challenge08/Chall08-whiteboard)
 |palindrome-Chall09|[go to palindrome](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall09/chall09)
+|Chall10-stack-and-queue|[go to stack-and-queue](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall10-stack-and-queue/Chall10-stack-and-queue-whiteboard)
 
