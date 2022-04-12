@@ -104,7 +104,7 @@ namespace TestProject
             list.Append( 2);
             list.Append(6);
             string result = SLL.ToStringMethod(list);
-            Assert.Equal("[2] -> [5] -> [6] -> NUll", result);
+            Assert.Equal("[5] -> [2] -> [6] -> NUll", result);
         }
 
         [Fact]
@@ -117,9 +117,7 @@ namespace TestProject
             list.Append(6);
             list.Append(6);
             string result = SLL.ToStringMethod(list);
-            Assert.Equal("[2] -> [5] -> [6] -> [6] -> [6] -> NUll", result);
-
-            //[2] -> [5] -> [6] -> [6] -> [6] -> NUll
+            Assert.Equal("[5] -> [2] -> [6] -> [6] -> [6] -> NUll", result);
 
         }
 
