@@ -1,12 +1,21 @@
 ﻿# Challenge Summary
-<!-- Description of the challenge -->
+
+I have to create a queue that can enqueue and dequeue an Animal that can be a cat or a dog
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+
+![](code-chall-12-whiteboard.png)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+time complexity for enqueue = O(1)
 
-## Solution
-<!-- Show how to run your code, and examples of it in action -->
+time complexity for dequeue = O(1)
+
+space complexity for enqueue = O(1)
+
+space complexity for dequeue = O(1)
+
+
+
+
 
