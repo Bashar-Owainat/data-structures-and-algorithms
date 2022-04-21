@@ -12,4 +12,5 @@
 |Chall10-stack-and-queue|[go to stack-and-queue](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall10-stack-and-queue/Chall10-stack-and-queue-whiteboard)
 |Chall-11-PseudoQueue|[go to PseudoQueue](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-11-stack-and-queue-pseudo/Chall-11-Whiteboard)
 |Chall-12-stack-queue-animal-shelter|[go to stack-queue-animal-shelter](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-12-stack-queue-animal-shelter/Chall-12-readme)
+|Chall-13-stack-queue-brackets|[go to Chall-13-stack-queue-brackets](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-13-stack-queue-brackets/chall-13-whiteboard)
 
