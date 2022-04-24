@@ -3,7 +3,9 @@
 ## Summary
 I did an implementation for a queue using two stacks
 
+## whiteboard
 
+![](chall-11-drawio.png)
 
 ## Description
 

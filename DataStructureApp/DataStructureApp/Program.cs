@@ -6,6 +6,7 @@ using DataStucture.LinkedList;
 using System;
 using System.Collections;
 using System.Text;
+using DataStructureApp.Chall_14_stack_getmax;
 
 namespace DataStructureApp
 {
@@ -18,7 +19,15 @@ namespace DataStructureApp
             queue.Enqueue("[");
             queue.Enqueue("bash");
             queue.Enqueue("[");
-           
+
+
+            Stack14 stack = new Stack14();
+            stack.Push(2);
+            stack.Push(3);
+
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+
 
 
 
