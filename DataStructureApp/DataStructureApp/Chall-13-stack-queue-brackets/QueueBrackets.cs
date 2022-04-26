@@ -66,11 +66,10 @@ namespace DataStructureApp.Chall_13_stack_queue_brackets
 
         }
 
-
         public bool CheckBrackets()
         {
             bool flag = false;
-            
+
             int rightRoundCounter = 0;
             int leftRoundCounter = 0;
 
@@ -80,25 +79,25 @@ namespace DataStructureApp.Chall_13_stack_queue_brackets
             int rightSquareCounter = 0;
             int leftSquareCounter = 0;
 
-            while(this.count != 0)
+            while (this.count != 0)
             {
                 string DequeuedValue = this.Dequeue();
-               
+
                 byte[] ascii = Encoding.ASCII.GetBytes(DequeuedValue);
-                
+
                 if (ascii[0] == 40)
                 {
                     rightRoundCounter += 1;
                 }
-                else if(ascii[0] == 41)
+                else if (ascii[0] == 41)
                 {
                     leftRoundCounter += 1;
                 }
-                else if(ascii[0] == 123)
+                else if (ascii[0] == 123)
                 {
                     rightCurlyCounter += 1;
                 }
-                else if(ascii[0] == 125)
+                else if (ascii[0] == 125)
                 {
                     leftCurlyCounter += 1;
                 }
@@ -111,7 +110,7 @@ namespace DataStructureApp.Chall_13_stack_queue_brackets
                     leftSquareCounter += 1;
                 }
 
-                if(rightRoundCounter == 0 && leftRoundCounter > rightRoundCounter || 
+                if (rightRoundCounter == 0 && leftRoundCounter > rightRoundCounter ||
                     rightCurlyCounter == 0 && leftCurlyCounter > rightCurlyCounter ||
                     rightSquareCounter == 0 && leftSquareCounter > rightSquareCounter)
                 {
@@ -120,7 +119,7 @@ namespace DataStructureApp.Chall_13_stack_queue_brackets
 
 
                 if (rightRoundCounter == leftRoundCounter &&
-                   rightCurlyCounter ==   leftCurlyCounter &&
+                   rightCurlyCounter == leftCurlyCounter &&
                    rightSquareCounter == leftSquareCounter)
                 {
                     flag = true;

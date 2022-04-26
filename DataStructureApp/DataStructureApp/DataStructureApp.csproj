@@ -5,12 +5,4 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Chall-13-stack-queue-brackets\chall-13-whiteboard.md" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Chall-13-stack-queue-brackets\chall-13-whiteboard.md" />
-  </ItemGroup>
-
 </Project>
