@@ -9,6 +9,9 @@ namespace DataStructureApp.Chall10_stack_and_queue
     public class MyStack
     {
         public Node top;
+        int max = 0;
+        int count = 0;
+        List<int> stackElements = new List<int>();
 
         public MyStack()
         {
@@ -26,10 +29,14 @@ namespace DataStructureApp.Chall10_stack_and_queue
             Node newNode = new Node(value);
             newNode.next = top;
             top = newNode;
+            stackElements.Add(value);
+            count++;
         }
 
         public int Pop()
         {
+
+
             if (IsEmpty())
             {
                 throw new InvalidOperationException("Stack is empty! You can't POP or Peek");
@@ -41,9 +48,13 @@ namespace DataStructureApp.Chall10_stack_and_queue
                 Node temp = top;
                 top = top.next;
                 temp.next = null;
+                int index = count - 1;
+                stackElements.RemoveAt(index);
+                count--;
 
                 return temp.value;            
             }
+
         }
 
 
@@ -57,6 +68,18 @@ namespace DataStructureApp.Chall10_stack_and_queue
             {
                 return top.value;
             }
+        }
+
+        public int GetMax()
+        {
+            foreach(int element in stackElements)
+            {
+                if(element > max)
+                {
+                    max = element;
+                }
+            }
+            return max;
         }
 
     }

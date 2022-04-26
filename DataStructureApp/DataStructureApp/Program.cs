@@ -15,24 +15,38 @@ namespace DataStructureApp
 
         static void Main(string[] args)
         {
-            QueueBrackets queue = new QueueBrackets();
-            queue.Enqueue("[");
-            queue.Enqueue("bash");
-            queue.Enqueue("[");
+            //QueueBrackets queue = new QueueBrackets();
+            //queue.Enqueue("[");
+            //queue.Enqueue("bash");
+            //queue.Enqueue("[");
 
 
-            Stack14 stack = new Stack14();
-            stack.Push(2);
+            //Stack14 stack = new Stack14();
+            //stack.Push(2);
+            //stack.Push(3);
+
+            //Console.WriteLine(stack.Pop());
+            //Console.WriteLine(stack.Pop());
+
+
+
+
+
+            //Console.WriteLine(queue.CheckBrackets());
+
+            MyStack stack = new MyStack();
             stack.Push(3);
+            stack.Push(5);
+            stack.Pop();
+            stack.Pop();
+            stack.Push(500);
+            stack.Push(50);
+            stack.Push(51);
 
-            Console.WriteLine(stack.Pop());
-            Console.WriteLine(stack.Pop());
 
 
-
-
-
-            Console.WriteLine(queue.CheckBrackets());
+            Console.WriteLine( stack.GetMax());
+           
 
 
 
