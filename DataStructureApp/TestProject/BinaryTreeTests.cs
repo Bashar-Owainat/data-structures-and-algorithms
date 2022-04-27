@@ -66,12 +66,31 @@ namespace TestProject
         }
 
        
+        [Fact]
+        public void TestMax()
+        {
+            MyBinarySearchTree Bt = new MyBinarySearchTree();
+            Bt.Add(5);
+            Bt.Add(10);
+            Bt.Add(300);
+
+            Assert.Equal(300, Bt.FindMax(Bt.root));
+
+        }
+
+        [Fact]
+        public void TestInvalidMax()
+        {
+            MyBinarySearchTree Bt = new MyBinarySearchTree();
+           
+
+            Assert.Equal(-2147483648, Bt.FindMax(Bt.root));
+
+        }
 
 
 
 
-        
 
-       
     }
 }

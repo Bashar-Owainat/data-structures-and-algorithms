@@ -15,4 +15,5 @@
 |Chall-13-stack-queue-brackets|[go to Chall-13-stack-queue-brackets](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-13-stack-queue-brackets/chall-13-whiteboard)
 |Chall-14-MaxStack|[go to Chall-14-MaxStack](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-14-stack-getmax/Chall-14-whiteboard)
 |Chall-15-binaryTree-implementation|[go to Chall-15-binaryTree-implementation](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-15-binaryTree-implementation/Chall-15-whiteboard)
+|Chall-16-tree-max|[go to Chall-16-tree-max](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-16-tree-max/chall-16-whiteboard)
 

@@ -67,5 +67,28 @@ namespace DataStructureApp
             
 
         }
+
+        public int FindMax(BinaryTreeNode node)
+        {
+
+            if (node == null)
+            {
+                return int.MinValue;
+            }
+
+            int result = node.value;
+            int leftResult = FindMax(node.leftNode);
+            int rightResult = FindMax(node.rightNode);
+
+            if(leftResult > result)
+            {
+                result = leftResult;
+            }
+            if(rightResult > result)
+            {
+                result = rightResult;
+            }
+            return result;
+        }
     }
 }
