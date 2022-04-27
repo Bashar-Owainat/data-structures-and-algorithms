@@ -6,7 +6,7 @@ using DataStucture.LinkedList;
 using System;
 using System.Collections;
 using System.Text;
-using DataStructureApp.Chall_14_stack_getmax;
+
 
 namespace DataStructureApp
 {
@@ -34,19 +34,35 @@ namespace DataStructureApp
 
             //Console.WriteLine(queue.CheckBrackets());
 
-            MyStack stack = new MyStack();
-            stack.Push(3);
-            stack.Push(5);
-            stack.Pop();
-            stack.Pop();
-            stack.Push(500);
-            stack.Push(50);
-            stack.Push(51);
+            //MyStack stack = new MyStack();
+            //stack.Push(3);
+            //stack.Push(5);
+            //stack.Pop();
+            //stack.Pop();
+            //stack.Push(500);
+            //stack.Push(50);
+            //stack.Push(51);
 
 
 
-            Console.WriteLine( stack.GetMax());
-           
+            //Console.WriteLine(stack.GetMax());
+
+
+
+
+            MyBinarySearchTree Bt = new MyBinarySearchTree();
+
+            Bt.Add(5);
+            Bt.Add(10);
+            Bt.Add(3);
+            Bt.Add(7);
+            Bt.TraversePreOrder(Bt.root);
+            
+            Console.WriteLine(Bt.Contains(6, Bt.root));
+          
+          
+
+
 
 
 
