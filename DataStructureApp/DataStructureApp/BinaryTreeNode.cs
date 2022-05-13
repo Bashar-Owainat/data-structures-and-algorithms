@@ -12,5 +12,12 @@ namespace DataStructureApp
         public BinaryTreeNode rightNode { get; set; }
         public int value;
 
+        public BinaryTreeNode(int item)
+        {
+            value = item;
+            leftNode = null;
+            rightNode = null;
+        }
+
     }
 }

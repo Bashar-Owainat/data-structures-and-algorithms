@@ -42,7 +42,7 @@ namespace DataStructureApp.Chall10_stack_and_queue
             }
         }
 
-        public int Dequeue()
+        public Node Dequeue()
         {
             if (IsEmpty())
             {
@@ -59,7 +59,7 @@ namespace DataStructureApp.Chall10_stack_and_queue
                 this.rear = null;
             }
                 
-            return temp.value;
+            return temp;
    
         }
 

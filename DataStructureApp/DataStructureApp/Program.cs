@@ -58,16 +58,16 @@ namespace DataStructureApp
             Bt.Add(7);
             Bt.Add(70);
 
-            Console.WriteLine("Max value : "+ Bt.FindMax(Bt.root));
-          
-          
+            Bt.BreadthFirst(Bt.root);
 
+
+           // Console.WriteLine("Max value : "+ Bt.FindMax(Bt.root));
             // Bt.TraversePreOrder(Bt.root);
             //Console.WriteLine(Bt.root.value);
             //Console.WriteLine(Bt.Contains(6, Bt.root));
 
 
-
+            
 
 
 
