@@ -89,6 +89,37 @@ namespace TestProject
         }
 
 
+        [Fact]
+        public void TestValidBreadthFirst()
+        {
+            MyBinarySearchTree Bt = new MyBinarySearchTree();
+
+            Bt.Add(5);
+            Bt.Add(10);
+            Bt.Add(3);
+            Bt.Add(7);
+            Bt.Add(70);
+            string result = Bt.BreadthFirst(Bt.root);
+            Assert.Equal("5 3 10 7 70 ",result);
+
+        }
+
+        [Fact]
+        public void TestInValidBreadthFirst()
+        {
+            MyBinarySearchTree Bt = new MyBinarySearchTree();
+
+            Bt.Add(5);
+            Bt.Add(10);
+            Bt.Add(3);
+            Bt.Add(7);
+            Bt.Add(70);
+            string result = Bt.BreadthFirst(Bt.root);
+            Assert.NotEqual("5 10 3 7 70 ", result);
+
+        }
+
+
 
 
 

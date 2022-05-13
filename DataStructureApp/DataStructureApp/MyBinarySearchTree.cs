@@ -27,8 +27,8 @@ namespace DataStructureApp
                 
             }
 
-            BinaryTreeNode newNode = new BinaryTreeNode();
-            newNode.value = value;
+            BinaryTreeNode newNode = new BinaryTreeNode(value);
+            
 
             if(this.root == null)
             {

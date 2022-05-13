@@ -1,8 +1,12 @@
-﻿using System;
+﻿using DataStructureApp.Chall_13_stack_queue_brackets;
+using DataStructureApp.Chall10_stack_and_queue;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace DataStructureApp
 {
@@ -89,6 +93,32 @@ namespace DataStructureApp
                 result = rightResult;
             }
             return result;
+        }
+
+        public string BreadthFirst(BinaryTreeNode root)
+        {
+            Queue<BinaryTreeNode> breadth = new Queue<BinaryTreeNode>();
+            breadth.Enqueue(root);
+            string result = "";
+            while(breadth.Count != 0)
+            {
+                BinaryTreeNode front = breadth.Dequeue();
+
+                Console.Write(front.value+" ");
+
+                result = result + front.value + " ";
+                if (front.leftNode != null)
+                {
+                    breadth.Enqueue(front.leftNode);
+                }
+
+                if(front.rightNode != null)
+                {
+                    breadth.Enqueue(front.rightNode);
+                }
+            }
+            return result;
+
         }
     }
 }
