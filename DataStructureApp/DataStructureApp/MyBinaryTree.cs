@@ -35,6 +35,8 @@ namespace DataStructureApp
             return preOrder;
         }
 
+       
+
         public void TraverseInOrder(BinaryTreeNode root)
         {
             if (root.leftNode != null)
@@ -120,5 +122,7 @@ namespace DataStructureApp
             return result;
 
         }
+
+    
     }
 }

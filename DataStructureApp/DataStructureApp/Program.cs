@@ -58,16 +58,37 @@ namespace DataStructureApp
             Bt.Add(7);
             Bt.Add(70);
 
-            Bt.BreadthFirst(Bt.root);
+            MyBinarySearchTree Bt2 = new MyBinarySearchTree();
+
+            Bt2.Add(1);
+            Bt2.Add(5);
+            Bt2.Add(2);
+           
+           
+
+            bool result = MyBinarySearchTree.CompareTrees(Bt2, Bt);
+
+            Console.WriteLine(result);
+
+            //Bt.BreadthFirst(Bt.root);
 
 
-           // Console.WriteLine("Max value : "+ Bt.FindMax(Bt.root));
+            // Console.WriteLine("Max value : "+ Bt.FindMax(Bt.root));
             // Bt.TraversePreOrder(Bt.root);
             //Console.WriteLine(Bt.root.value);
             //Console.WriteLine(Bt.Contains(6, Bt.root));
 
+            //KaryTree tree = new KaryTree();
+            // tree.root.value = "2";
+            //Console.WriteLine(tree.root.value);
+            // KaryNode root = new KaryNode("15");
+            // tree.root.AddChild("15")
 
-            
+
+
+
+
+
 
 
 
