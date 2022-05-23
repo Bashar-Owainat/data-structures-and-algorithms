@@ -13,31 +13,32 @@ namespace DataStructureApp
             BinaryTreeNode before = null;
             BinaryTreeNode after = this.root;
 
-            while(after != null)
+            while (after != null)
             {
                 before = after;
-                if(value < after.value)
+                if (value < after.value)
                 {
                     after = after.leftNode;
                 }
-                else if(value > after.value)
+                else if (value > after.value)
                 {
                     after = after.rightNode;
                 }
-                
+
             }
 
             BinaryTreeNode newNode = new BinaryTreeNode(value);
-            
 
-            if(this.root == null)
+
+
+            if (this.root == null)
             {
                 this.root = newNode;
 
             }
             else
             {
-                if(value < before.value)
+                if (value < before.value)
                 {
                     before.leftNode = newNode;
 
@@ -50,7 +51,54 @@ namespace DataStructureApp
 
         }
 
-        
+
+
+
+        public static int CountChildren(BinaryTreeNode root)
+        {
+
+            int count = 0;
+
+            if (root.leftNode != null)
+            {
+                CountChildren(root.leftNode);
+            }
+            else
+            {
+                count += 1;
+            }
+
+
+            if (root.rightNode != null)
+            {
+                CountChildren(root.rightNode);
+            }
+            else
+            {
+                count += 1;
+            }
+
+            return count;
+        }
+
+        public static bool CompareTrees(MyBinaryTree tree1, MyBinaryTree tree2)
+        {
+
+            int treeOneConut = CountChildren(tree1.root);
+            int treeTwoConut = CountChildren(tree2.root);
+
+            if (treeOneConut == treeTwoConut)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
+
+        }
         public bool Contains(int value, BinaryTreeNode root)
         {
             
