@@ -18,4 +18,5 @@
 |Chall-16-tree-max|[go to Chall-16-tree-max](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-16-tree-max/chall-16-whiteboard)
 |Chall-17-BreadthFirst|[go to Chall-17-BreadthFirst](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-17-tree-breadth-first/chall-17whiteborad)
 |Chall-19-compareTrees|[go to Chall-19-compareTrees](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-19-CompareTrees/WhiteBoard)
+|Chall-26-Insertion-sort|[go to Chall-26-Insertion-sort](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-26-Insertion-sort/Blog)
 
