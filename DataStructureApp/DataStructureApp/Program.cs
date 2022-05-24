@@ -10,88 +10,48 @@ using System.Text;
 
 namespace DataStructureApp
 {
-    class Program
+    public class Program
     {
 
         static void Main(string[] args)
         {
-            //QueueBrackets queue = new QueueBrackets();
-            //queue.Enqueue("[");
-            //queue.Enqueue("bash");
-            //queue.Enqueue("[");
-
-
-            //Stack14 stack = new Stack14();
-            //stack.Push(2);
-            //stack.Push(3);
-
-            //Console.WriteLine(stack.Pop());
-            //Console.WriteLine(stack.Pop());
-
-
-
-
-
-            //Console.WriteLine(queue.CheckBrackets());
-
-            //MyStack stack = new MyStack();
-            //stack.Push(3);
-            //stack.Push(5);
-            //stack.Pop();
-            //stack.Pop();
-            //stack.Push(500);
-            //stack.Push(50);
-            //stack.Push(51);
-
-
-
-            //Console.WriteLine(stack.GetMax());
-
-
-
-
-            MyBinarySearchTree Bt = new MyBinarySearchTree();
-
-            Bt.Add(5);
-            Bt.Add(10);
-            Bt.Add(3);
-            Bt.Add(7);
-            Bt.Add(70);
-
-            MyBinarySearchTree Bt2 = new MyBinarySearchTree();
-
-            Bt2.Add(1);
-            Bt2.Add(5);
-            Bt2.Add(2);
-           
+            int[] arr = { 8, 4 ,23 ,42 ,16, 15};
            
 
-            bool result = MyBinarySearchTree.CompareTrees(Bt2, Bt);
-
-            Console.WriteLine(result);
-
-            //Bt.BreadthFirst(Bt.root);
+            Program.PrintArray(arr);
+            Program.InsertionSort(arr);
+            Program.PrintArray(arr);
 
 
-            // Console.WriteLine("Max value : "+ Bt.FindMax(Bt.root));
-            // Bt.TraversePreOrder(Bt.root);
-            //Console.WriteLine(Bt.root.value);
-            //Console.WriteLine(Bt.Contains(6, Bt.root));
+        }
 
-            //KaryTree tree = new KaryTree();
-            // tree.root.value = "2";
-            //Console.WriteLine(tree.root.value);
-            // KaryNode root = new KaryNode("15");
-            // tree.root.AddChild("15")
+        public static int [] InsertionSort (int [] arr)
+        {
+            for(int i = 1; i < arr.Length; i++)
+            {
+                int j = i - 1;
+                int temp = arr[i];
 
+                while( j >= 0 && temp < arr[j])
+                {
+                    arr[j + 1] = arr[j];
+                    j = j - 1;
+                }
 
+                arr[j + 1] = temp;
+            }
+            return arr;
+        }
 
-
-
-
-
-
-
+        public static void PrintArray(int [] arr)
+        {
+            Console.Write("[");
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i]+" ");
+            }
+            Console.Write("]");
+            Console.WriteLine("");
         }
     }
 }
