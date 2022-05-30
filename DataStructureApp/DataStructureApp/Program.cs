@@ -26,6 +26,22 @@ namespace DataStructureApp
 
         }
 
+
+        public static void Swap(int [] arr, int i, int low)
+        {
+            int temp;
+            temp = arr[i];
+            arr[i] = arr[low];
+            arr[low] = temp;
+        }
+
+        //public static void Partition(int [] arr, int left, int right)
+        //{
+        //    int pivot = arr[right];
+        //    int low = left - 1;
+
+        //    for(int i = 0;  i <)
+        //}
         public static int [] InsertionSort (int [] arr)
         {
             for(int i = 1; i < arr.Length; i++)
