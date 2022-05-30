@@ -16,7 +16,7 @@ namespace TestProject
         {
             int[] arr = { 8, 4 ,23 ,42 ,16, 15};
 
-            int[] result = Program.SortArray(arr, 0, 5);
+            int[] result = Program.MergeSort(arr);
 
             int[] sorted = { 4, 8, 15, 16, 23, 42};
 
@@ -29,7 +29,7 @@ namespace TestProject
         {
             int[] arr = { 8, 4, 23, 42, 16, 15 };
 
-            int[] result = Program.SortArray(arr, 0, 5);
+            int[] result = Program.MergeSort(arr);
 
             int[] NotSorted = { 15, 16, 23, 42 , 4, 8, };
 

@@ -15,13 +15,15 @@ namespace DataStructureApp
 
         static void Main(string[] args)
         {
-            int[] arr = { 8, 4 ,23 ,42 ,16, 15};
+            int[] arr = { 2, 3, 5, 7, 13, 11 };
 
             Program.PrintArray(arr);
-            // Program.MergeSort(arr);
-            Program.SortArray(arr, 0, 5);
+            Program.QuickSort(arr, 0, 5);
+           
             Program.PrintArray(arr);
 
+          //  Program.MergeSort(arr);
+          //  Program.InsertionSort(arr);
 
 
         }
@@ -35,13 +37,39 @@ namespace DataStructureApp
             arr[low] = temp;
         }
 
-        //public static void Partition(int [] arr, int left, int right)
-        //{
-        //    int pivot = arr[right];
-        //    int low = left - 1;
+        public static int Partition(int[] arr, int left, int right)
+        {
+            int pivot = arr[right];
+            int low = left - 1;
 
-        //    for(int i = 0;  i <)
-        //}
+            for (int i = left; i < right; i++)
+            {
+                if(arr[i] <= pivot)
+                {
+                    low++;
+                    Swap(arr, i, low);
+                }
+
+            }
+            Swap(arr, right, low + 1);
+
+            return low + 1;
+        }
+
+        public static int [] QuickSort(int [] arr, int left, int right)
+        {
+            if(left < right)
+            {
+                int position = Partition(arr, left, right);
+
+                QuickSort(arr, left, position - 1);
+
+                QuickSort(arr, position + 1, right);
+
+            }
+
+            return arr;
+        }
         public static int [] InsertionSort (int [] arr)
         {
             for(int i = 1; i < arr.Length; i++)
@@ -72,7 +100,7 @@ namespace DataStructureApp
         }
 
 
-        public static void MergeSort( int [] arr)
+        public static int [] MergeSort( int [] arr)
         {
             int n = arr.Length;
 
@@ -86,16 +114,15 @@ namespace DataStructureApp
                     left[i] = arr[i];
                 }
                
-               int rightLength = n - mid;
+              
 
-               int[] right = new int[rightLength+5];
+               int[] right = new int[n - mid];
 
                 for(int i = mid;  i < n ;  i++)
                 {
-                    right[i] = arr[i];
+                    right[i - mid] = arr[i];
                 }
 
-               
 
                 MergeSort(left);
 
@@ -103,6 +130,7 @@ namespace DataStructureApp
 
                 Merge(left, right, arr);
             }
+            return arr;
 
         }
 
@@ -144,60 +172,7 @@ namespace DataStructureApp
             }
         }
 
-        public static int[] SortArray(int[] array, int left, int right)
-        {
-            if (left < right)
-            {
-                int middle = left + (right - left) / 2;
-
-                SortArray(array, left, middle);
-                SortArray(array, middle + 1, right);
-
-                MergeArray(array, left, middle, right);
-            }
-
-            return array;
-        }
-
-        public static void MergeArray(int[] array, int left, int middle, int right)
-        {
-            var leftArrayLength = middle - left + 1;
-            var rightArrayLength = right - middle;
-            var leftTempArray = new int[leftArrayLength];
-            var rightTempArray = new int[rightArrayLength];
-            int i, j;
-
-            for (i = 0; i < leftArrayLength; ++i)
-                leftTempArray[i] = array[left + i];
-            for (j = 0; j < rightArrayLength; ++j)
-                rightTempArray[j] = array[middle + 1 + j];
-
-            i = 0;
-            j = 0;
-            int k = left;
-
-            while (i < leftArrayLength && j < rightArrayLength)
-            {
-                if (leftTempArray[i] <= rightTempArray[j])
-                {
-                    array[k++] = leftTempArray[i++];
-                }
-                else
-                {
-                    array[k++] = rightTempArray[j++];
-                }
-            }
-
-            while (i < leftArrayLength)
-            {
-                array[k++] = leftTempArray[i++];
-            }
-
-            while (j < rightArrayLength)
-            {
-                array[k++] = rightTempArray[j++];
-            }
-        }
+      
 
     }
 }
