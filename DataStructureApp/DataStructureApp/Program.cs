@@ -6,7 +6,7 @@ using DataStucture.LinkedList;
 using System;
 using System.Collections;
 using System.Text;
-
+using System.Collections.Generic;
 
 namespace DataStructureApp
 {
@@ -15,19 +15,35 @@ namespace DataStructureApp
 
         static void Main(string[] args)
         {
-            int[] arr = { 2, 3, 5, 7, 13, 11 };
+            string test = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
 
-            Program.PrintArray(arr);
-            Program.QuickSort(arr, 0, 5);
-           
-            Program.PrintArray(arr);
-
-          //  Program.MergeSort(arr);
-          //  Program.InsertionSort(arr);
-
-
+            Console.WriteLine(RepeatedWord(test));
         }
+        public static string RepeatedWord(string str)
+        {
+            string[] arr = str.Replace(",", "").ToLower().Split(" ");
+            IDictionary<string, int> counts = new Dictionary<string, int>();
 
+            string result = "";
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (counts.ContainsKey(arr[i]))
+                {
+                    int value = counts[arr[i]];
+                    counts[arr[i]] = value + 1;
+                    result = arr[i];
+                    break;
+                }
+
+                else
+                {
+                    counts.Add(arr[i], 1);
+                }
+            }
+
+            return result;
+        }
 
         public static void Swap(int [] arr, int i, int low)
         {
