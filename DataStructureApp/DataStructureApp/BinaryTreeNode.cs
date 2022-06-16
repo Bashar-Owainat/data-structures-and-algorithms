@@ -19,5 +19,27 @@ namespace DataStructureApp
             rightNode = null;
         }
 
+        public static BinaryTreeNode insert(BinaryTreeNode node, int key)
+        {
+
+            if (node == null)
+            {
+                return new BinaryTreeNode(key);
+            }
+
+
+            if (key < node.value)
+            {
+                node.leftNode = insert(node.leftNode, key);
+            }
+            else if (key > node.value)
+            {
+                node.rightNode = insert(node.rightNode, key);
+            }
+
+
+            return node;
+        }
+
     }
 }
