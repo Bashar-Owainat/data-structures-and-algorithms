@@ -15,10 +15,43 @@ namespace DataStructureApp
 
         static void Main(string[] args)
         {
-            string test = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+            MyBinarySearchTree tree1 = new MyBinarySearchTree();
+            MyBinarySearchTree tree2 = new MyBinarySearchTree();
 
-            Console.WriteLine(RepeatedWord(test));
+            BinaryTreeNode root1 = tree1.root;
+            BinaryTreeNode root2 = tree2.root;
+
+            root1 = BinaryTreeNode.insert(root1, 5);
+            root1 = BinaryTreeNode.insert(root1, 1);
+            root1 = BinaryTreeNode.insert(root1, 10);
+            root1 = BinaryTreeNode.insert(root1, 0);
+            root1 = BinaryTreeNode.insert(root1, 4);
+            root1 = BinaryTreeNode.insert(root1, 7);
+            root1 = BinaryTreeNode.insert(root1, 9);
+
+            root2 = BinaryTreeNode.insert(root2, 10);
+            root2 = BinaryTreeNode.insert(root2, 7);
+            root2 = BinaryTreeNode.insert(root2, 20);
+            root2 = BinaryTreeNode.insert(root2, 4);
+            root2 = BinaryTreeNode.insert(root2, 9);
+
+
+
+            TreeIntersection.tree_intersection(root1, root2);
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
         public static string RepeatedWord(string str)
         {
             string[] arr = str.Replace(",", "").ToLower().Split(" ");
