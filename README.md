@@ -23,3 +23,5 @@
 |Chall-28-quick-sort|[go to Chall-28-quick-sort](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-28-quick-sort/Blog)
 |Chall-30-hashtable|[go to Chall-30-hashtable](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-30-hashtable/README)
 |Chall-31-RepeatedWord|[go to Chall-31-RepeatedWord](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-31-Repeated-word/README)
+|Chall-33-JoinHashtables|[go toChall-33-JoinHashtables](https://bashar-owainat.github.io/data-structures-and-algorithms/DataStructureApp/DataStructureApp/Chall-33/README)
+

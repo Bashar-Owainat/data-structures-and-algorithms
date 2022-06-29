@@ -21,7 +21,7 @@ namespace DataStructureApp
     public class MyHashtable<T>
 {
     private readonly HashNode<T>[] buckets;
-
+    public int size { get; set; }
     public MyHashtable(int size)
     {
         buckets = new HashNode<T>[size];
@@ -59,6 +59,7 @@ namespace DataStructureApp
             }
             listNode.Next = valueNode;
         }
+        size++;
     }
     public void ValidateKey(string key)
     {

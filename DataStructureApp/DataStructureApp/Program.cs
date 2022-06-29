@@ -12,32 +12,81 @@ namespace DataStructureApp
 {
     public class Program
     {
-
+    
         static void Main(string[] args)
         {
-            MyBinarySearchTree tree1 = new MyBinarySearchTree();
-            MyBinarySearchTree tree2 = new MyBinarySearchTree();
+            //MyBinarySearchTree tree1 = new MyBinarySearchTree();
+            //MyBinarySearchTree tree2 = new MyBinarySearchTree();
 
-            BinaryTreeNode root1 = tree1.root;
-            BinaryTreeNode root2 = tree2.root;
+            //BinaryTreeNode root1 = tree1.root;
+            //BinaryTreeNode root2 = tree2.root;
 
-            root1 = BinaryTreeNode.insert(root1, 5);
-            root1 = BinaryTreeNode.insert(root1, 1);
-            root1 = BinaryTreeNode.insert(root1, 10);
-            root1 = BinaryTreeNode.insert(root1, 0);
-            root1 = BinaryTreeNode.insert(root1, 4);
-            root1 = BinaryTreeNode.insert(root1, 7);
-            root1 = BinaryTreeNode.insert(root1, 9);
+            //root1 = BinaryTreeNode.insert(root1, 5);
+            //root1 = BinaryTreeNode.insert(root1, 1);
+            //root1 = BinaryTreeNode.insert(root1, 10);
+            //root1 = BinaryTreeNode.insert(root1, 0);
+            //root1 = BinaryTreeNode.insert(root1, 4);
+            //root1 = BinaryTreeNode.insert(root1, 7);
+            //root1 = BinaryTreeNode.insert(root1, 9);
 
-            root2 = BinaryTreeNode.insert(root2, 10);
-            root2 = BinaryTreeNode.insert(root2, 7);
-            root2 = BinaryTreeNode.insert(root2, 20);
-            root2 = BinaryTreeNode.insert(root2, 4);
-            root2 = BinaryTreeNode.insert(root2, 9);
+            //root2 = BinaryTreeNode.insert(root2, 10);
+            //root2 = BinaryTreeNode.insert(root2, 7);
+            //root2 = BinaryTreeNode.insert(root2, 20);
+            //root2 = BinaryTreeNode.insert(root2, 4);
+            //root2 = BinaryTreeNode.insert(root2, 9);
 
 
 
-            TreeIntersection.tree_intersection(root1, root2);
+            //TreeIntersection.tree_intersection(root1, root2);
+
+            Hashtable table1 = new Hashtable();
+            table1.Add(0, "bash");
+            table1.Add(1, "bashar");
+            table1.Add(2, "bash owai");
+
+            Hashtable table2 = new Hashtable();
+            table1.Add(3, "chirs");
+            table1.Add(4, "christopher");
+            table1.Add(5, "meme");
+
+            Hashtable result =  JoinTwoTables(table1, table2);
+
+            foreach(DictionaryEntry entry in result)
+            {
+                Console.WriteLine(entry.Key + " " + entry.Value);
+            }
+
+        }
+
+        public static Hashtable JoinTwoTables(Hashtable table1 , Hashtable table2)
+        {
+
+
+            int Length = table1.Count + table2.Count;
+
+            Hashtable result = new Hashtable();
+
+
+            for(int i = 0; i < Length; i++)
+            {
+
+                  if(i < table1.Count)
+                  {
+
+                        result[i] = table1[i];
+                  }
+                else
+                {
+                    result[i] = table2[i];
+
+                }
+              
+                
+            }
+           
+
+
+            return result;
         }
 
 
