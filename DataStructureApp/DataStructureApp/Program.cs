@@ -39,24 +39,61 @@ namespace DataStructureApp
 
             //TreeIntersection.tree_intersection(root1, root2);
 
-            Hashtable table1 = new Hashtable();
-            table1.Add(0, "bash");
-            table1.Add(1, "bashar");
-            table1.Add(2, "bash owai");
+            //Hashtable table1 = new Hashtable();
+            //table1.Add(0, "bash");
+            //table1.Add(1, "bashar");
+            //table1.Add(2, "bash owai");
 
-            Hashtable table2 = new Hashtable();
-            table1.Add(3, "chirs");
-            table1.Add(4, "christopher");
-            table1.Add(5, "meme");
+            //Hashtable table2 = new Hashtable();
+            //table1.Add(3, "chirs");
+            //table1.Add(4, "christopher");
+            //table1.Add(5, "meme");
 
-            Hashtable result =  JoinTwoTables(table1, table2);
+            //Hashtable result =  JoinTwoTables(table1, table2);
 
-            foreach(DictionaryEntry entry in result)
+            //foreach(DictionaryEntry entry in result)
+            //{
+            //    Console.WriteLine(entry.Key + " " + entry.Value);
+            //}
+
+
+
+            string str = "In a galaxy far far away In a galaxy far far away  galaxy galaxy galaxy galaxy galaxy galaxy";
+           Console.WriteLine( MostCommonWord(str));
+        }
+
+
+        public static string MostCommonWord(string str)
+        {
+            string[] arr = str.Replace(",", "").ToLower().Split(" ");
+            Hashtable counts = new Hashtable();
+
+            string result = "";
+
+            for (int i = 0; i < arr.Length; i++)
             {
-                Console.WriteLine(entry.Key + " " + entry.Value);
+                if (counts.ContainsKey(arr[i]))
+                {
+                    int value = (int)counts[arr[i]];
+                    counts[arr[i]] = value + 1;
+                    result = arr[i];
+                    
+                }
+
+                else
+                {
+                    counts.Add(arr[i], 1);
+                }
             }
 
+            return result;
         }
+
+
+
+
+
+
 
         public static Hashtable JoinTwoTables(Hashtable table1 , Hashtable table2)
         {
@@ -92,7 +129,7 @@ namespace DataStructureApp
 
 
 
-
+      
 
 
 
