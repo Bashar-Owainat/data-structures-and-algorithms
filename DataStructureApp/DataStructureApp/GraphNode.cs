@@ -8,7 +8,7 @@ namespace DataStructureApp
 {
     public class GraphNode
     {
-       
+
         public int value { get; set; }
         public List<GraphNode> neighbors { get; set; }
 
@@ -25,8 +25,8 @@ namespace DataStructureApp
         public override string ToString()
         {
             StringBuilder nodeString = new StringBuilder();
-            nodeString.Append("Node Value : " + value +"Neighbors");
-            foreach(var item in neighbors)
+            nodeString.Append("Node Value : " + value + "Neighbors");
+            foreach (var item in neighbors)
             {
                 nodeString.Append(" -> " + item.value);
             }
@@ -39,28 +39,28 @@ namespace DataStructureApp
         List<GraphNode> graphNodes = new List<GraphNode>();
 
 
-    //add node
+        //add node
 
-    public GraphNode AddNode(int value)
-    {
+        public GraphNode AddNode(int value)
+        {
             GraphNode newNode = new GraphNode(value);
             graphNodes.Add(newNode);
             return newNode;
 
-    }
-    // add edge
-    public void AddEdge(GraphNode node1, GraphNode node2)
-    {
+        }
+        // add edge
+        public void AddEdge(GraphNode node1, GraphNode node2)
+        {
 
-            if(Exists(node1.value) != null && Exists(node2.value) != null)
+            if (Exists(node1.value) != null && Exists(node2.value) != null)
             {
                 node1.AddNeighbor(node2);
             }
-    }
+        }
 
-    public GraphNode Exists(int value)
-    {
-            foreach(GraphNode item in graphNodes)
+        public GraphNode Exists(int value)
+        {
+            foreach (GraphNode item in graphNodes)
             {
                 if (item.value.Equals(value))
                 {
@@ -68,21 +68,48 @@ namespace DataStructureApp
                 }
             }
             return null;
-    }
+        }
 
-    //get nodes
-    public IList<GraphNode> GetNodes()
-    {
+        //get nodes
+        public IList<GraphNode> GetNodes()
+        {
             return graphNodes.AsReadOnly();
-    }
+        }
 
 
-    //size the total number of nodes in the graph
-    public int Size()
+        //size the total number of nodes in the graph
+        public int Size()
         {
             return graphNodes.Count;
         }
 
+       public List<GraphNode> BreadthFirst(GraphNode node)
+       {
+            List<GraphNode> nodes = new List<GraphNode>();
+            Queue<GraphNode> breadth = new Queue<GraphNode>();
+            List<GraphNode> visited = new List<GraphNode>();
 
+            breadth.Enqueue(node);
+            visited.Add(node);
+
+            while(breadth != null)
+            {
+                GraphNode front = breadth.Dequeue();
+                nodes.Add(front);
+
+                foreach(GraphNode item in front.neighbors)
+                {
+                    if (!visited.Contains(item))
+                    {
+                        visited.Add(item);
+                        breadth.Enqueue(item);
+                    }
+                }
+            }
+
+            return nodes;
+
+
+        }
     }
 }
