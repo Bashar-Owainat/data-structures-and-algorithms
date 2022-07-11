@@ -111,5 +111,33 @@ namespace DataStructureApp
 
 
         }
+
+
+        public HashSet<GraphNode> DFS(MyGraph graph, GraphNode start)
+        {
+            var visited = new HashSet<GraphNode>();
+            
+            if (graph.Exists(start.value) != null)
+                return visited;
+
+            var stack = new Stack<GraphNode>();
+            stack.Push(start);
+
+            while (stack.Count > 0)
+            {
+                var vertex = stack.Pop();
+
+                if (visited.Contains(vertex))
+                    continue;
+
+                visited.Add(vertex);
+
+                foreach (var neighbor in graph.graphNodes)
+                    if (!visited.Contains(neighbor))
+                        stack.Push(neighbor);
+            }
+
+            return visited;
+        }
     }
 }
