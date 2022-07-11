@@ -1,0 +1,1 @@
+﻿![](Chall-39.drawio.png)
